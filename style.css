@@ -1,0 +1,86 @@
+.item{
+   border: 1px solid black; 
+   /*width:100px;
+   height: 100px; */
+    display:flex;
+    justify-content: center;
+    /* déterminer l'espacement entre les els selon y (col) */
+    align-items: center;
+
+}
+
+/* FlexBox */
+.container{
+    /*
+    width:400px;
+    border: 2px solid red;
+    display: flex;
+   flex-direction: row;
+   /* déterminer l'espacement entre les els selon x (row) */
+  /* justify-content: space-evenly;
+   height: 400px;
+  flex-wrap: wrap; /* it wrapes the el (retour à la ligne) pour s'adapter selon le width du container */
+  /*align-content: flex-end; /* it works when we have multilines ==> détermine l'espacement entre les lignes */
+ /* column-gap: 20px;
+  row-gap: 10px; */
+ /* gap : 30px /* shorthand */
+   
+} 
+ /* Grid */
+.container {
+    height: 600px;
+    border: 1px solid red;
+    display: grid;
+    grid-template-columns: auto auto auto;
+   /* grid-template-rows: 200px 100px 100px auto; */
+}
+
+/* FlexBox */
+#item1 {
+   /*flex-basis: 200px; */
+  /* flex-grow: 3; */
+  /*align-self: flex-end; */
+}
+
+/* Grid */
+#item1 {
+  /*  grid-column-start: 1;
+    grid-column-end: span 2; */
+   
+   /* grid-column: 1 / span 2;
+    grid-row: 1 / span 3; */
+    /*grid-area: 1 / 1 / span 3 / span 3 /*shorthand for grid-column and grid-row */
+}
+
+.logo-docplanner{
+    width: 268px;
+    height: 33px
+}
+
+/* navBar */
+#liste{
+    display: flex;
+    gap : 5px
+
+}
+
+li {
+    list-style-type: none;
+    
+}
+
+#nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/* Responsive web design */
+@media screen and (max-width: 576px){
+    .container {
+        background-color: brown;
+    }
+
+}
+
+
